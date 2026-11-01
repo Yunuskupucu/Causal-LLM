@@ -1,0 +1,10 @@
+
+========================================================================
+Deney 02a - Nöral modelin eğitimi (next-token prediction)
+========================================================================
+külliyat: 1,115,394 karakter, |V| = 65, eğitim 1,003,854 / doğrulama 111,540
+model: 816,000 parametre, cihaz = cpu
+iter     0 | eğitim 4.2042 nat (6.065 bpc) | doğrulama 4.1980 nat (6.056 bpc) | lr 1.00e-05 |    0.8s
+iter   100 | eğitim 2.5533 nat (3.684 bpc) | doğrulama 2.5399 nat (3.664 bpc) | lr 1.00e-03 |    9.1s
+iter   200 | eğitim 2.4266 nat (3.501 bpc) | doğrulama 2.4184 nat (3.489 bpc) | lr 9.99e-04 |   17.1s
+iter   300 | eğitim 2.3632 nat (3.409 bpc) | doğrulama 2.3668 nat (3.415 bpc) | lr 9.96e-04 |   25.0s

@@ -1,0 +1,99 @@
+{
+  "mask_T6": [
+    [
+      0.0,
+      -Infinity,
+      -Infinity,
+      -Infinity,
+      -Infinity,
+      -Infinity
+    ],
+    [
+      0.0,
+      0.0,
+      -Infinity,
+      -Infinity,
+      -Infinity,
+      -Infinity
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      -Infinity,
+      -Infinity,
+      -Infinity
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -Infinity,
+      -Infinity
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -Infinity
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "part_a": {
+    "text": "ROMEO: I",
+    "layer": 0,
+    "head": 0,
+    "upper_triangle_max_A": 0.0,
+    "row_sums": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.9999999403953552,
+      1.0,
+      1.0000001192092896,
+      1.0
+    ]
+  },
+  "part_b": {
+    "n_matrices": 128,
+    "T": 128,
+    "max_upper_triangle": 0.0,
+    "max_rowsum_error": 3.5762786865234375e-07
+  },
+  "part_c_perturbation": {
+    "T": 16,
+    "text": "First Citizen:\nB",
+    "masked_max_upper": 0.0,
+    "masked_min_lower": 0.10934039950370789,
+    "unmasked_max_upper": 20.534603118896484
+  },
+  "part_d_jacobian": {
+    "masked_max_upper": 0.0,
+    "masked_min_lower": 1.187142014503479,
+    "unmasked_max_upper": 44.48537826538086
+  },
+  "part_e": {
+    "masked": {
+      "train_last20": 1.7619330167770386,
+      "teacher_forced": 1.916322946548462,
+      "honest": 1.9162374176084995
+    },
+    "unmasked": {
+      "train_last20": 0.040524800214916466,
+      "teacher_forced": 0.04343082755804062,
+      "honest": 8.762142419815063
+    },
+    "uniform": 4.174387269895637
+  }
+}

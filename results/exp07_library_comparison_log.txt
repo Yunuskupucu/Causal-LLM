@@ -1,0 +1,30 @@
+
+========================================================================
+Deney 07-A: açık dikkat vs F.scaled_dot_product_attention
+========================================================================
+T=   16 | max|fark| = 2.4e-07 | açık    0.05 ms | SDPA    0.01 ms | A matrisi    0.00 MB
+T=  128 | max|fark| = 3.6e-07 | açık    0.08 ms | SDPA    0.04 ms | A matrisi    0.25 MB
+T=  512 | max|fark| = 7.7e-07 | açık    0.58 ms | SDPA    0.41 ms | A matrisi    4.00 MB
+T= 1024 | max|fark| = 6.0e-07 | açık    3.12 ms | SDPA    1.01 ms | A matrisi   16.00 MB
+T= 2048 | max|fark| = 6.0e-07 | açık   12.50 ms | SDPA    3.04 ms | A matrisi   64.00 MB
+  [şekil] figures/fig07_attention_timing.pdf|png
+  [sonuç] results/exp07_timing.json
+
+========================================================================
+Deney 07-B: log-softmax kararlılığı
+========================================================================
+manuel NLL 7.310979 vs F.cross_entropy 7.310979 (fark 4.8e-07)
+x200 logit: saf softmax->log'da sonlu olmayan değer sayısı = 63/64; logsumexp sürümü tamamı sonlu = True
+
+========================================================================
+Deney 07-C: -inf vs finfo.min maske değeri
+========================================================================
+tamamen maskeli satır, -inf      -> [nan, nan, nan, nan]
+tamamen maskeli satır, finfo.min -> [0.25, 0.25, 0.25, 0.25]
+fp16, finfo(fp16).min            -> [0.25, 0.25, 0.25, 0.25]
+
+========================================================================
+Deney 07-D: top-p uygulaması vs Hugging Face algoritması
+========================================================================
+2000 rastgele dağılımda tutulan küme farkı: 0
+  [sonuç] results/exp07_library_comparison.json

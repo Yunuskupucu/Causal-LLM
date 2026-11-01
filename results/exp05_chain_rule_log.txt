@@ -1,0 +1,14 @@
+
+========================================================================
+Deney 05-A: paralel (teacher forcing) == sıralı (önek) açılım
+========================================================================
+8 dizi x 64 karakter: maskeli |paralel - sıralı| maks = 1.53e-05 | maskesiz = 1.03e+02
+dizi 0: log p(x_1:T) paralel = -91.6308, sıralı = -91.6308
+
+========================================================================
+Deney 05-B: konum bazlı kayıp (bağlam uzunluğu etkisi)
+========================================================================
+t=0: 2.426 nat (bigram taban çizgisi 2.482), t=1: 2.109 (trigram 2.052), t=8: 1.524, t=32: 1.574, t=127: 1.541 nat
+ortalama L = 1.5912 nat = 2.2956 bit/kr. -> PPL = exp(L) = 4.910
+  [şekil] figures/fig05_chain_rule.pdf|png
+  [sonuç] results/exp05_chain_rule.json

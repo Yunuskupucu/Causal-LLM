@@ -1,0 +1,318 @@
+{
+  "entropy_scan": {
+    "n": 3840,
+    "mean_bits": 2.0054215949540475,
+    "min_bits": 0.004664681851863861,
+    "max_bits": 5.021908283233643
+  },
+  "contexts": {
+    "kararlı": {
+      "tail": "ould fain be doing.\n\nGREMIO:",
+      "true_next": "\\n"
+    },
+    "tipik": {
+      "tail": "ETRUCHIO:\nYou wrong me, Sign",
+      "true_next": "i"
+    },
+    "belirsiz": {
+      "tail": " a gift very grateful, I am\n",
+      "true_next": "s"
+    }
+  },
+  "temperature_single_context": [
+    {
+      "T": 0.2,
+      "entropy_bits": 0.0026449363213032484,
+      "max_prob": 0.9998257756233215,
+      "support_gt_1e-3": 1
+    },
+    {
+      "T": 0.7,
+      "entropy_bits": 0.968170166015625,
+      "max_prob": 0.8387424349784851,
+      "support_gt_1e-3": 7
+    },
+    {
+      "T": 1.0,
+      "entropy_bits": 1.8203407526016235,
+      "max_prob": 0.6608846783638,
+      "support_gt_1e-3": 16
+    },
+    {
+      "T": 1.5,
+      "entropy_bits": 3.0213911533355713,
+      "max_prob": 0.43095386028289795,
+      "support_gt_1e-3": 28
+    }
+  ],
+  "nucleus_size_p0.9_typical_context": {
+    "0.2": 1,
+    "0.7": 2,
+    "1.0": 4,
+    "1.5": 9
+  },
+  "topk_topp_two_contexts": {
+    "kararlı": {
+      "context_tail": "ould fain be doing.\n\nGREMIO:",
+      "true_next": "\\n",
+      "tam dağılım (T=1)": {
+        "entropy_bits": 0.008000345900654793,
+        "support": 65,
+        "removed_mass": 0.0,
+        "max_prob": 0.999542236328125
+      },
+      "top-k, k = 5": {
+        "entropy_bits": 0.002356702694669366,
+        "support": 5,
+        "removed_mass": 0.0003122091293334961,
+        "max_prob": 0.999854326248169
+      },
+      "top-p, p = 0.9": {
+        "entropy_bits": -0.0,
+        "support": 1,
+        "removed_mass": 0.000457763671875,
+        "max_prob": 1.0
+      }
+    },
+    "belirsiz": {
+      "context_tail": " a gift very grateful, I am\n",
+      "true_next": "s",
+      "tam dağılım (T=1)": {
+        "entropy_bits": 4.964304447174072,
+        "support": 65,
+        "removed_mass": 0.0,
+        "max_prob": 0.11089692264795303
+      },
+      "top-k, k = 5": {
+        "entropy_bits": 2.2576565742492676,
+        "support": 5,
+        "removed_mass": 0.6471223831176758,
+        "max_prob": 0.31426453590393066
+      },
+      "top-p, p = 0.9": {
+        "entropy_bits": 4.559189319610596,
+        "support": 29,
+        "removed_mass": 0.09197372198104858,
+        "max_prob": 0.12212963402271271
+      }
+    }
+  },
+  "stepwise": [
+    {
+      "step": 0,
+      "T": 0.2,
+      "true_next": "s",
+      "entropy_bits": 1.022099013425759e-06,
+      "p_true": 2.0278335455259366e-08
+    },
+    {
+      "step": 0,
+      "T": 0.7,
+      "true_next": "s",
+      "entropy_bits": 0.22051890194416046,
+      "p_true": 0.006198110058903694
+    },
+    {
+      "step": 0,
+      "T": 1.5,
+      "true_next": "s",
+      "entropy_bits": 2.7815356254577637,
+      "p_true": 0.0554962083697319
+    },
+    {
+      "step": 1,
+      "T": 0.2,
+      "true_next": "t",
+      "entropy_bits": 0.0008904892019927502,
+      "p_true": 0.9999450445175171
+    },
+    {
+      "step": 1,
+      "T": 0.7,
+      "true_next": "t",
+      "entropy_bits": 0.902998149394989,
+      "p_true": 0.8703587055206299
+    },
+    {
+      "step": 1,
+      "T": 1.5,
+      "true_next": "t",
+      "entropy_bits": 3.236210346221924,
+      "p_true": 0.4166337847709656
+    },
+    {
+      "step": 2,
+      "T": 0.2,
+      "true_next": "r",
+      "entropy_bits": 0.08147086948156357,
+      "p_true": 0.989983081817627
+    },
+    {
+      "step": 2,
+      "T": 0.7,
+      "true_next": "r",
+      "entropy_bits": 1.2447688579559326,
+      "p_true": 0.7206341028213501
+    },
+    {
+      "step": 2,
+      "T": 1.5,
+      "true_next": "r",
+      "entropy_bits": 2.4748928546905518,
+      "p_true": 0.42500364780426025
+    },
+    {
+      "step": 3,
+      "T": 0.2,
+      "true_next": "u",
+      "entropy_bits": 0.3150264620780945,
+      "p_true": 0.953222393989563
+    },
+    {
+      "step": 3,
+      "T": 0.7,
+      "true_next": "u",
+      "entropy_bits": 1.819015383720398,
+      "p_true": 0.5365543961524963
+    },
+    {
+      "step": 3,
+      "T": 1.5,
+      "true_next": "u",
+      "entropy_bits": 2.5341501235961914,
+      "p_true": 0.3319525122642517
+    },
+    {
+      "step": 4,
+      "T": 0.2,
+      "true_next": "m",
+      "entropy_bits": 0.001137512386776507,
+      "p_true": 3.3328658901154995e-05
+    },
+    {
+      "step": 4,
+      "T": 0.7,
+      "true_next": "m",
+      "entropy_bits": 1.2047678232192993,
+      "p_true": 0.043196193873882294
+    },
+    {
+      "step": 4,
+      "T": 1.5,
+      "true_next": "m",
+      "entropy_bits": 3.4524435997009277,
+      "p_true": 0.0911150798201561
+    }
+  ],
+  "aggregate": {
+    "n_positions": 3936,
+    "temperature": [
+      {
+        "T": 0.2,
+        "mean_entropy_bits": 0.43023598194122314,
+        "mean_max_prob": 0.8925290107727051,
+        "mean_nucleus_0.9": 1.5388720035552979,
+        "mean_nucleus_0.95": 1.7700711488723755
+      },
+      {
+        "T": 0.5,
+        "mean_entropy_bits": 1.099588394165039,
+        "mean_max_prob": 0.7482024431228638,
+        "mean_nucleus_0.9": 3.074949264526367,
+        "mean_nucleus_0.95": 3.822662591934204
+      },
+      {
+        "T": 0.7,
+        "mean_entropy_bits": 1.4779152870178223,
+        "mean_max_prob": 0.671714723110199,
+        "mean_nucleus_0.9": 4.1445631980896,
+        "mean_nucleus_0.95": 5.273881912231445
+      },
+      {
+        "T": 1.0,
+        "mean_entropy_bits": 2.0079739093780518,
+        "mean_max_prob": 0.5745210647583008,
+        "mean_nucleus_0.9": 5.9893293380737305,
+        "mean_nucleus_0.95": 7.8622965812683105
+      },
+      {
+        "T": 1.5,
+        "mean_entropy_bits": 2.870443105697632,
+        "mean_max_prob": 0.43754008412361145,
+        "mean_nucleus_0.9": 10.257113456726074,
+        "mean_nucleus_0.95": 14.43445110321045
+      },
+      {
+        "T": 2.0,
+        "mean_entropy_bits": 3.6666274070739746,
+        "mean_max_prob": 0.3254599869251251,
+        "mean_nucleus_0.9": 16.800050735473633,
+        "mean_nucleus_0.95": 24.650915145874023
+      }
+    ],
+    "top_k": [
+      {
+        "k": 1,
+        "mean_entropy_bits": 0.0,
+        "mean_removed_mass": 0.4254789352416992,
+        "max_removed_mass": 0.9217512011528015
+      },
+      {
+        "k": 5,
+        "mean_entropy_bits": 1.3594236373901367,
+        "mean_removed_mass": 0.13852731883525848,
+        "max_removed_mass": 0.6794187426567078
+      },
+      {
+        "k": 10,
+        "mean_entropy_bits": 1.7234346866607666,
+        "mean_removed_mass": 0.057717207819223404,
+        "max_removed_mass": 0.4696664810180664
+      },
+      {
+        "k": 20,
+        "mean_entropy_bits": 1.9393060207366943,
+        "mean_removed_mass": 0.010088364593684673,
+        "max_removed_mass": 0.23271679878234863
+      }
+    ],
+    "top_p": [
+      {
+        "p": 0.5,
+        "mean_entropy_bits": 0.6879410147666931,
+        "mean_support": 2.106961488723755,
+        "min_support": 1,
+        "max_support": 10,
+        "mean_removed_mass": 0.29201510548591614,
+        "max_removed_mass": 0.4999656081199646
+      },
+      {
+        "p": 0.8,
+        "mean_entropy_bits": 1.3152172565460205,
+        "mean_support": 4.252540588378906,
+        "min_support": 1,
+        "max_support": 23,
+        "mean_removed_mass": 0.12937410175800323,
+        "max_removed_mass": 0.1999993920326233
+      },
+      {
+        "p": 0.9,
+        "mean_entropy_bits": 1.5826053619384766,
+        "mean_support": 5.9893293380737305,
+        "min_support": 1,
+        "max_support": 30,
+        "mean_removed_mass": 0.06798531860113144,
+        "max_removed_mass": 0.09998893737792969
+      },
+      {
+        "p": 0.95,
+        "mean_entropy_bits": 1.7501952648162842,
+        "mean_support": 7.8622965812683105,
+        "min_support": 1,
+        "max_support": 36,
+        "mean_removed_mass": 0.035374414175748825,
+        "max_removed_mass": 0.04999428987503052
+      }
+    ]
+  }
+}

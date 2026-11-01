@@ -1,0 +1,107 @@
+{
+  "configs": [
+    {
+      "name": "greedy (T→0)",
+      "temperature": 0.0,
+      "self_nll_nat": 0.9461166267108199,
+      "valid_word_ratio": 1.0,
+      "repeat_4gram": 0.8664987405541563,
+      "distinct_2": 0.17582417582417584,
+      "n_words": 92.0
+    },
+    {
+      "name": "T = 0.2",
+      "temperature": 0.2,
+      "self_nll_nat": 0.8766485154479368,
+      "valid_word_ratio": 0.9746138191310484,
+      "repeat_4gram": 0.5138539042821159,
+      "distinct_2": 0.6638941678018744,
+      "n_words": 86.8
+    },
+    {
+      "name": "T = 0.7",
+      "temperature": 0.7,
+      "self_nll_nat": 1.1584623626001496,
+      "valid_word_ratio": 0.9357873283753697,
+      "repeat_4gram": 0.13954659949622164,
+      "distinct_2": 0.9889706251971166,
+      "n_words": 81.3
+    },
+    {
+      "name": "T = 1.0",
+      "temperature": 1.0,
+      "self_nll_nat": 1.4103920829027219,
+      "valid_word_ratio": 0.8468269876628209,
+      "repeat_4gram": 0.07707808564231736,
+      "distinct_2": 0.9972597597597597,
+      "n_words": 76.8
+    },
+    {
+      "name": "T = 1.5",
+      "temperature": 1.5,
+      "self_nll_nat": 2.182633999893839,
+      "valid_word_ratio": 0.5875539322839389,
+      "repeat_4gram": 0.026448362720403018,
+      "distinct_2": 1.0,
+      "n_words": 68.7
+    },
+    {
+      "name": "top-k = 5",
+      "temperature": 1.0,
+      "top_k": 5,
+      "self_nll_nat": 1.176055726072842,
+      "valid_word_ratio": 0.932868506528747,
+      "repeat_4gram": 0.18539042821158694,
+      "distinct_2": 0.9814879842941489,
+      "n_words": 82.4
+    },
+    {
+      "name": "top-k = 20",
+      "temperature": 1.0,
+      "top_k": 20,
+      "self_nll_nat": 1.4042050024620572,
+      "valid_word_ratio": 0.8357231999228659,
+      "repeat_4gram": 0.07556675062972294,
+      "distinct_2": 0.9961034579455632,
+      "n_words": 76.3
+    },
+    {
+      "name": "top-p = 0.9",
+      "temperature": 1.0,
+      "top_p": 0.9,
+      "self_nll_nat": 1.232760000587406,
+      "valid_word_ratio": 0.9161216330575286,
+      "repeat_4gram": 0.1030226700251889,
+      "distinct_2": 0.9936617501915433,
+      "n_words": 79.3
+    },
+    {
+      "name": "top-p = 0.95",
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "self_nll_nat": 1.2927521810794533,
+      "valid_word_ratio": 0.8815681995169126,
+      "repeat_4gram": 0.09949622166246852,
+      "distinct_2": 0.9934768101434768,
+      "n_words": 77.1
+    },
+    {
+      "name": "T=0.7 + p=0.9",
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "self_nll_nat": 1.0720203820326573,
+      "valid_word_ratio": 0.9726111007929144,
+      "repeat_4gram": 0.17153652392947102,
+      "distinct_2": 0.9819610854961287,
+      "n_words": 84.2
+    }
+  ],
+  "reference": {
+    "name": "insan (doğrulama)",
+    "self_nll_nat": 1.5739637470484378,
+    "valid_word_ratio": 0.9406632380727178,
+    "repeat_4gram": 0.16045340050377832,
+    "distinct_2": 0.9697852827411759,
+    "n_words": 74.4
+  }
+}

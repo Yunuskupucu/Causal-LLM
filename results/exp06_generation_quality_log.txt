@@ -1,0 +1,17 @@
+
+========================================================================
+Deney 06 - Örnekleme ayarları ve üretim kalitesi
+========================================================================
+greedy (T→0)    | öz-NLL 0.946 | tekrar-4g 0.866 | geçerli sözcük 1.000 | ayrık-2 0.176
+T = 0.2         | öz-NLL 0.877 | tekrar-4g 0.514 | geçerli sözcük 0.975 | ayrık-2 0.664
+T = 0.7         | öz-NLL 1.158 | tekrar-4g 0.140 | geçerli sözcük 0.936 | ayrık-2 0.989
+T = 1.0         | öz-NLL 1.410 | tekrar-4g 0.077 | geçerli sözcük 0.847 | ayrık-2 0.997
+T = 1.5         | öz-NLL 2.183 | tekrar-4g 0.026 | geçerli sözcük 0.588 | ayrık-2 1.000
+top-k = 5       | öz-NLL 1.176 | tekrar-4g 0.185 | geçerli sözcük 0.933 | ayrık-2 0.981
+top-k = 20      | öz-NLL 1.404 | tekrar-4g 0.076 | geçerli sözcük 0.836 | ayrık-2 0.996
+top-p = 0.9     | öz-NLL 1.233 | tekrar-4g 0.103 | geçerli sözcük 0.916 | ayrık-2 0.994
+top-p = 0.95    | öz-NLL 1.293 | tekrar-4g 0.099 | geçerli sözcük 0.882 | ayrık-2 0.993
+T=0.7 + p=0.9   | öz-NLL 1.072 | tekrar-4g 0.172 | geçerli sözcük 0.973 | ayrık-2 0.982
+insan (doğrulama)| öz-NLL 1.574 | tekrar-4g 0.160 | geçerli sözcük 0.941 | ayrık-2 0.970
+  [sonuç] results/exp06_generation_quality.json
+  [şekil] figures/fig06_generation_quality.pdf|png

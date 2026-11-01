@@ -1,0 +1,59 @@
+{
+  "part_a": [
+    {
+      "T": 16,
+      "max_abs_diff": 2.384185791015625e-07,
+      "attn_matrix_MB": 0.00390625
+    },
+    {
+      "T": 128,
+      "max_abs_diff": 3.5762786865234375e-07,
+      "attn_matrix_MB": 0.25
+    },
+    {
+      "T": 512,
+      "max_abs_diff": 7.748603820800781e-07,
+      "attn_matrix_MB": 4.0
+    },
+    {
+      "T": 1024,
+      "max_abs_diff": 5.960464477539062e-07,
+      "attn_matrix_MB": 16.0
+    },
+    {
+      "T": 2048,
+      "max_abs_diff": 5.960464477539062e-07,
+      "attn_matrix_MB": 64.0
+    }
+  ],
+  "part_b": {
+    "manual_nll": 7.310978889465332,
+    "torch_cross_entropy": 7.31097936630249,
+    "naive_nonfinite_count": 63,
+    "stable_all_finite": true
+  },
+  "part_c": {
+    "all_minus_inf_row": [
+      NaN,
+      NaN,
+      NaN,
+      NaN
+    ],
+    "all_finfo_min_row": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "fp16_finfo_min_row": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ]
+  },
+  "part_d": {
+    "trials": 2000,
+    "mismatches": 0
+  }
+}

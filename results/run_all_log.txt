@@ -1,0 +1,247 @@
+
+========================================================================
+Deney 02a - Nöral modelin eğitimi (next-token prediction)
+========================================================================
+külliyat: 1,115,394 karakter, |V| = 65, eğitim 1,003,854 / doğrulama 111,540
+model: 816,000 parametre, cihaz = cpu
+iter     0 | eğitim 4.2042 nat (6.065 bpc) | doğrulama 4.1980 nat (6.056 bpc) | lr 1.00e-05 |    0.8s
+iter   100 | eğitim 2.5533 nat (3.684 bpc) | doğrulama 2.5399 nat (3.664 bpc) | lr 1.00e-03 |    8.7s
+iter   200 | eğitim 2.4266 nat (3.501 bpc) | doğrulama 2.4184 nat (3.489 bpc) | lr 9.99e-04 |   16.6s
+iter   300 | eğitim 2.3632 nat (3.409 bpc) | doğrulama 2.3668 nat (3.415 bpc) | lr 9.96e-04 |   24.6s
+iter   400 | eğitim 2.2708 nat (3.276 bpc) | doğrulama 2.2683 nat (3.273 bpc) | lr 9.92e-04 |   32.5s
+iter   500 | eğitim 2.1849 nat (3.152 bpc) | doğrulama 2.1958 nat (3.168 bpc) | lr 9.85e-04 |   40.4s
+iter   600 | eğitim 2.0997 nat (3.029 bpc) | doğrulama 2.1245 nat (3.065 bpc) | lr 9.77e-04 |   48.2s
+iter   700 | eğitim 2.0157 nat (2.908 bpc) | doğrulama 2.0560 nat (2.966 bpc) | lr 9.67e-04 |   56.1s
+iter   800 | eğitim 1.9505 nat (2.814 bpc) | doğrulama 2.0130 nat (2.904 bpc) | lr 9.55e-04 |   64.0s
+iter   900 | eğitim 1.8993 nat (2.740 bpc) | doğrulama 1.9826 nat (2.860 bpc) | lr 9.42e-04 |   71.9s
+iter  1000 | eğitim 1.8449 nat (2.662 bpc) | doğrulama 1.9362 nat (2.793 bpc) | lr 9.27e-04 |   79.9s
+iter  1100 | eğitim 1.7969 nat (2.592 bpc) | doğrulama 1.9021 nat (2.744 bpc) | lr 9.11e-04 |   87.8s
+iter  1200 | eğitim 1.7631 nat (2.544 bpc) | doğrulama 1.8788 nat (2.711 bpc) | lr 8.93e-04 |   95.7s
+iter  1300 | eğitim 1.7249 nat (2.488 bpc) | doğrulama 1.8484 nat (2.667 bpc) | lr 8.73e-04 |  103.5s
+iter  1400 | eğitim 1.6968 nat (2.448 bpc) | doğrulama 1.8242 nat (2.632 bpc) | lr 8.53e-04 |  111.5s
+iter  1500 | eğitim 1.6731 nat (2.414 bpc) | doğrulama 1.8105 nat (2.612 bpc) | lr 8.31e-04 |  119.4s
+iter  1600 | eğitim 1.6447 nat (2.373 bpc) | doğrulama 1.8016 nat (2.599 bpc) | lr 8.07e-04 |  127.6s
+iter  1700 | eğitim 1.6232 nat (2.342 bpc) | doğrulama 1.7719 nat (2.556 bpc) | lr 7.83e-04 |  135.9s
+iter  1800 | eğitim 1.6077 nat (2.319 bpc) | doğrulama 1.7444 nat (2.517 bpc) | lr 7.58e-04 |  143.8s
+iter  1900 | eğitim 1.5828 nat (2.283 bpc) | doğrulama 1.7245 nat (2.488 bpc) | lr 7.32e-04 |  151.8s
+iter  2000 | eğitim 1.5748 nat (2.272 bpc) | doğrulama 1.7204 nat (2.482 bpc) | lr 7.05e-04 |  159.7s
+iter  2100 | eğitim 1.5617 nat (2.253 bpc) | doğrulama 1.7120 nat (2.470 bpc) | lr 6.78e-04 |  167.7s
+iter  2200 | eğitim 1.5484 nat (2.234 bpc) | doğrulama 1.7035 nat (2.458 bpc) | lr 6.50e-04 |  175.6s
+iter  2300 | eğitim 1.5364 nat (2.217 bpc) | doğrulama 1.6921 nat (2.441 bpc) | lr 6.22e-04 |  183.6s
+iter  2400 | eğitim 1.5239 nat (2.198 bpc) | doğrulama 1.6747 nat (2.416 bpc) | lr 5.93e-04 |  191.5s
+iter  2500 | eğitim 1.5143 nat (2.185 bpc) | doğrulama 1.6614 nat (2.397 bpc) | lr 5.64e-04 |  199.5s
+iter  2600 | eğitim 1.5021 nat (2.167 bpc) | doğrulama 1.6537 nat (2.386 bpc) | lr 5.36e-04 |  207.5s
+iter  2700 | eğitim 1.4964 nat (2.159 bpc) | doğrulama 1.6523 nat (2.384 bpc) | lr 5.07e-04 |  215.4s
+iter  2800 | eğitim 1.4845 nat (2.142 bpc) | doğrulama 1.6323 nat (2.355 bpc) | lr 4.78e-04 |  223.5s
+iter  2900 | eğitim 1.4758 nat (2.129 bpc) | doğrulama 1.6277 nat (2.348 bpc) | lr 4.50e-04 |  231.4s
+iter  3000 | eğitim 1.4677 nat (2.117 bpc) | doğrulama 1.6264 nat (2.346 bpc) | lr 4.22e-04 |  239.4s
+iter  3100 | eğitim 1.4609 nat (2.108 bpc) | doğrulama 1.6246 nat (2.344 bpc) | lr 3.95e-04 |  247.3s
+iter  3200 | eğitim 1.4575 nat (2.103 bpc) | doğrulama 1.6168 nat (2.333 bpc) | lr 3.68e-04 |  255.2s
+iter  3300 | eğitim 1.4507 nat (2.093 bpc) | doğrulama 1.6175 nat (2.334 bpc) | lr 3.42e-04 |  263.2s
+iter  3400 | eğitim 1.4443 nat (2.084 bpc) | doğrulama 1.6095 nat (2.322 bpc) | lr 3.17e-04 |  271.3s
+iter  3500 | eğitim 1.4375 nat (2.074 bpc) | doğrulama 1.6026 nat (2.312 bpc) | lr 2.93e-04 |  279.3s
+iter  3600 | eğitim 1.4334 nat (2.068 bpc) | doğrulama 1.5944 nat (2.300 bpc) | lr 2.69e-04 |  287.5s
+iter  3700 | eğitim 1.4286 nat (2.061 bpc) | doğrulama 1.5936 nat (2.299 bpc) | lr 2.47e-04 |  295.8s
+iter  3800 | eğitim 1.4205 nat (2.049 bpc) | doğrulama 1.5868 nat (2.289 bpc) | lr 2.27e-04 |  304.2s
+iter  3900 | eğitim 1.4177 nat (2.045 bpc) | doğrulama 1.5827 nat (2.283 bpc) | lr 2.07e-04 |  312.8s
+iter  4000 | eğitim 1.4119 nat (2.037 bpc) | doğrulama 1.5796 nat (2.279 bpc) | lr 1.89e-04 |  321.3s
+iter  4100 | eğitim 1.4088 nat (2.033 bpc) | doğrulama 1.5793 nat (2.278 bpc) | lr 1.73e-04 |  329.5s
+iter  4200 | eğitim 1.4056 nat (2.028 bpc) | doğrulama 1.5755 nat (2.273 bpc) | lr 1.58e-04 |  337.8s
+iter  4300 | eğitim 1.4044 nat (2.026 bpc) | doğrulama 1.5727 nat (2.269 bpc) | lr 1.45e-04 |  346.0s
+iter  4400 | eğitim 1.4007 nat (2.021 bpc) | doğrulama 1.5681 nat (2.262 bpc) | lr 1.33e-04 |  354.4s
+iter  4500 | eğitim 1.3992 nat (2.019 bpc) | doğrulama 1.5696 nat (2.264 bpc) | lr 1.23e-04 |  362.5s
+iter  4600 | eğitim 1.3980 nat (2.017 bpc) | doğrulama 1.5694 nat (2.264 bpc) | lr 1.15e-04 |  370.6s
+iter  4700 | eğitim 1.3939 nat (2.011 bpc) | doğrulama 1.5642 nat (2.257 bpc) | lr 1.08e-04 |  378.7s
+iter  4800 | eğitim 1.3912 nat (2.007 bpc) | doğrulama 1.5615 nat (2.253 bpc) | lr 1.04e-04 |  386.7s
+iter  4900 | eğitim 1.3924 nat (2.009 bpc) | doğrulama 1.5636 nat (2.256 bpc) | lr 1.01e-04 |  394.9s
+iter  5000 | eğitim 1.3907 nat (2.006 bpc) | doğrulama 1.5622 nat (2.254 bpc) | lr 1.00e-04 |  402.9s
+  [sonuç] results/train_timing.json
+  [sonuç] results/train_log.json
+
+========================================================================
+Deney 02b - İstatistiksel n-gram taban çizgileri (Denk. 20)
+========================================================================
+1-gram | alpha=0.001  | doğrulama 3.3473 nat (4.829 bpc) | görülen bağlam 1 / olası 1
+2-gram | alpha=0.5    | doğrulama 2.4820 nat (3.581 bpc) | görülen bağlam 65 / olası 65
+3-gram | alpha=0.5    | doğrulama 2.0523 nat (2.961 bpc) | görülen bağlam 1,380 / olası 4,225
+4-gram | alpha=0.05   | doğrulama 1.7773 nat (2.564 bpc) | görülen bağlam 11,228 / olası 274,625
+5-gram | alpha=0.05   | doğrulama 1.7565 nat (2.534 bpc) | görülen bağlam 48,539 / olası 17,850,625
+6-gram | alpha=0.05   | doğrulama 1.9939 nat (2.877 bpc) | görülen bağlam 133,293 / olası 1,160,290,625
+7-gram | alpha=0.05   | doğrulama 2.3665 nat (3.414 bpc) | görülen bağlam 264,623 / olası 75,418,890,625
+  [sonuç] results/ngram_baselines.json
+  [şekil] figures/fig_loss_curve.pdf|png
+  [şekil] figures/fig_ngram_vs_neural.pdf|png
+M (T=6):
+ tensor([[0., -inf, -inf, -inf, -inf, -inf],
+        [0., 0., -inf, -inf, -inf, -inf],
+        [0., 0., 0., -inf, -inf, -inf],
+        [0., 0., 0., 0., -inf, -inf],
+        [0., 0., 0., 0., 0., -inf],
+        [0., 0., 0., 0., 0., 0.]])
+
+========================================================================
+Deney 01-A: S, S+M ve A matrisleri (tek baş)
+========================================================================
+  [şekil] figures/fig01_mask_heatmaps.pdf|png
+
+========================================================================
+Deney 01-B: tüm katman/başlarda üst üçgen == 0 kontrolü
+========================================================================
+128 dikkat matrisi (T=128) kontrol edildi:
+  max |A_ij| (j>i)      = 0.000e+00  (beklenen: 0)
+  max |sum_j A_ij - 1|  = 3.576e-07  (beklenen: ~1e-7)
+
+========================================================================
+Deney 01-C/D: bozma ve Jakobiyen sızıntı testleri
+========================================================================
+    bozma | maskeli: max üst-üçgen = 0.00e+00, min alt-üçgen = 1.09e-01 | maskesiz: max üst-üçgen = 2.05e+01
+Jakobiyen | maskeli: max üst-üçgen = 0.00e+00, min alt-üçgen = 1.19e+00 | maskesiz: max üst-üçgen = 4.45e+01
+  [şekil] figures/fig01_leak_tests.pdf|png
+
+========================================================================
+Deney 01-E: maskesiz eğitim = bilgi sızıntısı ('hile')
+========================================================================
+maskeli : eğitim son 1.762 | teacher-forcing 1.916 | dürüst 1.916 nat
+maskesiz: eğitim son 0.041 | teacher-forcing 0.043 | dürüst 8.762 nat  (tekdüze = 4.174)  [17s]
+  [şekil] figures/fig01_leak_training.pdf|png
+  [sonuç] results/exp01_mask_verification.json
+
+========================================================================
+Deney 03 - Sıcaklık / Top-k / Top-p mekanizma analizi
+========================================================================
+ kararlı bağlam: ''ould fain be doing.\n\nGREMIO:'' -> gerçek '\n'
+   tipik bağlam: ''ETRUCHIO:\nYou wrong me, Sign'' -> gerçek 'i'
+belirsiz bağlam: '' a gift very grateful, I am\n'' -> gerçek 's'
+  [şekil] figures/fig03_temperature_bars.pdf|png
+  [şekil] figures/fig03_cumulative_entropy.pdf|png
+  [şekil] figures/fig03_topk_topp.pdf|png
+  [şekil] figures/fig03_stepwise_bars.pdf|png
+
+========================================================================
+Deney 03 - toplu istatistikler (Tablo II-III)
+========================================================================
+T=0.2  | H̄ = 0.430 bit | max p̄ = 0.893 | |V_0.9|¯ = 1.54 | |V_0.95|¯ = 1.77
+T=0.5  | H̄ = 1.100 bit | max p̄ = 0.748 | |V_0.9|¯ = 3.07 | |V_0.95|¯ = 3.82
+T=0.7  | H̄ = 1.478 bit | max p̄ = 0.672 | |V_0.9|¯ = 4.14 | |V_0.95|¯ = 5.27
+T=1.0  | H̄ = 2.008 bit | max p̄ = 0.575 | |V_0.9|¯ = 5.99 | |V_0.95|¯ = 7.86
+T=1.5  | H̄ = 2.870 bit | max p̄ = 0.438 | |V_0.9|¯ = 10.26 | |V_0.95|¯ = 14.43
+T=2.0  | H̄ = 3.667 bit | max p̄ = 0.325 | |V_0.9|¯ = 16.80 | |V_0.95|¯ = 24.65
+top-k k=1  | H̄ = 0.000 bit | atılan kütle ort. 0.425, maks 0.922
+top-k k=5  | H̄ = 1.359 bit | atılan kütle ort. 0.139, maks 0.679
+top-k k=10 | H̄ = 1.723 bit | atılan kütle ort. 0.058, maks 0.470
+top-k k=20 | H̄ = 1.939 bit | atılan kütle ort. 0.010, maks 0.233
+top-p p=0.5 | H̄ = 0.688 bit | |V_p| ort. 2.11 (min 1, maks 10) | atılan kütle ort. 0.292, maks 0.500
+top-p p=0.8 | H̄ = 1.315 bit | |V_p| ort. 4.25 (min 1, maks 23) | atılan kütle ort. 0.129, maks 0.200
+top-p p=0.9 | H̄ = 1.583 bit | |V_p| ort. 5.99 (min 1, maks 30) | atılan kütle ort. 0.068, maks 0.100
+top-p p=0.95| H̄ = 1.750 bit | |V_p| ort. 7.86 (min 1, maks 36) | atılan kütle ort. 0.035, maks 0.050
+  [sonuç] results/exp03_sampling_analysis.json
+bağlam sonu: 'EMIO:\nGood morrow, neighbour B' -> gerçek 'a'; logit aralığı [-11.02, 7.42]
+
+========================================================================
+Deney 04-A: Softmax Jakobiyeni (Denk. 13)
+========================================================================
+T=0.2 | max|J_an - J_autograd| = 8.9e-08 | max|J_an - J_fd| = 5.9e-05 | ||J||_F = 0.1173
+T=0.7 | max|J_an - J_autograd| = 7.5e-09 | max|J_an - J_fd| = 3.7e-05 | ||J||_F = 0.5004
+T=1.0 | max|J_an - J_autograd| = 5.8e-11 | max|J_an - J_fd| = 2.4e-05 | ||J||_F = 0.3731
+T=1.5 | max|J_an - J_autograd| = 1.2e-10 | max|J_an - J_fd| = 2.6e-05 | ||J||_F = 0.2346
+
+========================================================================
+Deney 04-B: dL/dz = (1/T)(p_T - y) (Denk. 14)
+========================================================================
+analitik vs autograd gradyan normu, maks fark = 2.4e-07
+T=0.05: doğru hedef ||g|| = 3.30e-07, yanlış hedef ||g|| = 2.83e+01 (sqrt(2)/T = 2.83e+01)
+
+========================================================================
+Deney 04-C: dH/dT = Var_p(z)/T^3 (Denk. 16)
+========================================================================
+analitik vs sonlu-fark dH/dT, maks fark = 3.0e-04; min dH/dT = 1.087e-01 (>= 0 beklenir)
+
+========================================================================
+Deney 04-D: sınır durumları
+========================================================================
+T=0.001   | max p = 1.0000 | H = -0.0000 bit
+T=0.01    | max p = 1.0000 | H = 0.0000 bit
+T=0.1     | max p = 0.9999 | H = 0.0019 bit
+T=1       | max p = 0.4515 | H = 2.3451 bit
+T=10      | max p = 0.0375 | H = 5.8946 bit
+T=100     | max p = 0.0169 | H = 6.0212 bit
+T=10000   | max p = 0.0154 | H = 6.0224 bit
+tekdüze sınır: log2|V| = 6.0224 bit
+  [şekil] figures/fig04_temperature_derivatives.pdf|png
+  [sonuç] results/exp04_softmax_temperature.json
+
+========================================================================
+Deney 05-A: paralel (teacher forcing) == sıralı (önek) açılım
+========================================================================
+8 dizi x 64 karakter: maskeli |paralel - sıralı| maks = 1.53e-05 | maskesiz = 1.03e+02
+dizi 0: log p(x_1:T) paralel = -91.6308, sıralı = -91.6308
+
+========================================================================
+Deney 05-B: konum bazlı kayıp (bağlam uzunluğu etkisi)
+========================================================================
+t=0: 2.426 nat (bigram taban çizgisi 2.482), t=1: 2.109 (trigram 2.052), t=8: 1.524, t=32: 1.574, t=127: 1.541 nat
+ortalama L = 1.5912 nat = 2.2956 bit/kr. -> PPL = exp(L) = 4.910
+  [şekil] figures/fig05_chain_rule.pdf|png
+  [sonuç] results/exp05_chain_rule.json
+
+========================================================================
+Deney 06 - Örnekleme ayarları ve üretim kalitesi
+========================================================================
+greedy (T→0)    | öz-NLL 0.946 | tekrar-4g 0.866 | geçerli sözcük 1.000 | ayrık-2 0.176
+T = 0.2         | öz-NLL 0.877 | tekrar-4g 0.514 | geçerli sözcük 0.975 | ayrık-2 0.664
+T = 0.7         | öz-NLL 1.158 | tekrar-4g 0.140 | geçerli sözcük 0.936 | ayrık-2 0.989
+T = 1.0         | öz-NLL 1.410 | tekrar-4g 0.077 | geçerli sözcük 0.847 | ayrık-2 0.997
+T = 1.5         | öz-NLL 2.183 | tekrar-4g 0.026 | geçerli sözcük 0.588 | ayrık-2 1.000
+top-k = 5       | öz-NLL 1.176 | tekrar-4g 0.185 | geçerli sözcük 0.933 | ayrık-2 0.981
+top-k = 20      | öz-NLL 1.404 | tekrar-4g 0.076 | geçerli sözcük 0.836 | ayrık-2 0.996
+top-p = 0.9     | öz-NLL 1.233 | tekrar-4g 0.103 | geçerli sözcük 0.916 | ayrık-2 0.994
+top-p = 0.95    | öz-NLL 1.293 | tekrar-4g 0.099 | geçerli sözcük 0.882 | ayrık-2 0.993
+T=0.7 + p=0.9   | öz-NLL 1.072 | tekrar-4g 0.172 | geçerli sözcük 0.973 | ayrık-2 0.982
+insan (doğrulama)| öz-NLL 1.574 | tekrar-4g 0.160 | geçerli sözcük 0.941 | ayrık-2 0.970
+  [sonuç] results/exp06_generation_quality.json
+  [şekil] figures/fig06_generation_quality.pdf|png
+
+========================================================================
+Deney 07-A: açık dikkat vs F.scaled_dot_product_attention
+========================================================================
+T=   16 | max|fark| = 3.6e-07 | açık    0.06 ms | SDPA    0.02 ms | A matrisi    0.00 MB
+T=  128 | max|fark| = 4.8e-07 | açık    0.11 ms | SDPA    0.04 ms | A matrisi    0.25 MB
+T=  512 | max|fark| = 7.2e-07 | açık    0.56 ms | SDPA    0.40 ms | A matrisi    4.00 MB
+T= 1024 | max|fark| = 7.2e-07 | açık    3.07 ms | SDPA    0.99 ms | A matrisi   16.00 MB
+T= 2048 | max|fark| = 1.1e-06 | açık   12.34 ms | SDPA    3.05 ms | A matrisi   64.00 MB
+  [şekil] figures/fig07_attention_timing.pdf|png
+
+========================================================================
+Deney 07-B: log-softmax kararlılığı
+========================================================================
+manuel NLL 7.310979 vs F.cross_entropy 7.310979 (fark 4.8e-07)
+x200 logit: saf softmax->log'da sonlu olmayan değer sayısı = 63/64; logsumexp sürümü tamamı sonlu = True
+
+========================================================================
+Deney 07-C: -inf vs finfo.min maske değeri
+========================================================================
+tamamen maskeli satır, -inf      -> [nan, nan, nan, nan]
+tamamen maskeli satır, finfo.min -> [0.25, 0.25, 0.25, 0.25]
+fp16, finfo(fp16).min            -> [0.25, 0.25, 0.25, 0.25]
+
+========================================================================
+Deney 07-D: top-p uygulaması vs Hugging Face algoritması
+========================================================================
+2000 rastgele dağılımda tutulan küme farkı: 0
+  [sonuç] results/exp07_library_comparison.json
+
+>>> exp02_train.py
+
+>>> exp01_mask_verification.py
+
+>>> exp03_sampling_analysis.py
+
+>>> exp04_softmax_temperature.py
+
+>>> exp05_chain_rule.py
+
+>>> exp06_generation_quality.py
+
+>>> exp07_library_comparison.py
+
+Tamamlandı: 468 s. Şekiller: figures/, sayısal sonuçlar: results/

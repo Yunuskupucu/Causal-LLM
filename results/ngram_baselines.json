@@ -1,0 +1,69 @@
+{
+  "uniform_nat": 4.174387269895637,
+  "uniform_bpc": 6.022367813028454,
+  "models": [
+    {
+      "n": 1,
+      "alpha": 0.001,
+      "val_nat": 3.347328485945355,
+      "val_bpc": 4.829174206899726,
+      "val_ppl": 28.426689811552404,
+      "n_contexts": 1,
+      "possible_contexts": 1
+    },
+    {
+      "n": 2,
+      "alpha": 0.5,
+      "val_nat": 2.4819821811892764,
+      "val_bpc": 3.5807433843765417,
+      "val_ppl": 11.964957641928242,
+      "n_contexts": 65,
+      "possible_contexts": 65
+    },
+    {
+      "n": 3,
+      "alpha": 0.5,
+      "val_nat": 2.0522782457179387,
+      "val_bpc": 2.9608116476215716,
+      "val_ppl": 7.785618468328312,
+      "n_contexts": 1380,
+      "possible_contexts": 4225
+    },
+    {
+      "n": 4,
+      "alpha": 0.05,
+      "val_nat": 1.777327636111529,
+      "val_bpc": 2.564141766653007,
+      "val_ppl": 5.914030839705284,
+      "n_contexts": 11228,
+      "possible_contexts": 274625
+    },
+    {
+      "n": 5,
+      "alpha": 0.05,
+      "val_nat": 1.7565432306094921,
+      "val_bpc": 2.5341562079073934,
+      "val_ppl": 5.792379825900543,
+      "n_contexts": 48539,
+      "possible_contexts": 17850625
+    },
+    {
+      "n": 6,
+      "alpha": 0.05,
+      "val_nat": 1.9939402386587513,
+      "val_bpc": 2.8766476941419366,
+      "val_ppl": 7.344415574498688,
+      "n_contexts": 133293,
+      "possible_contexts": 1160290625
+    },
+    {
+      "n": 7,
+      "alpha": 0.05,
+      "val_nat": 2.3664738376300916,
+      "val_bpc": 3.4141000699424073,
+      "val_ppl": 10.659737968613435,
+      "n_contexts": 264623,
+      "possible_contexts": 75418890625
+    }
+  ]
+}

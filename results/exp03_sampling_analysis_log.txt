@@ -1,0 +1,30 @@
+
+========================================================================
+Deney 03 - Sıcaklık / Top-k / Top-p mekanizma analizi
+========================================================================
+ kararlı bağlam: ''ould fain be doing.\n\nGREMIO:'' -> gerçek '\n'
+   tipik bağlam: ''ETRUCHIO:\nYou wrong me, Sign'' -> gerçek 'i'
+belirsiz bağlam: '' a gift very grateful, I am\n'' -> gerçek 's'
+  [şekil] figures/fig03_temperature_bars.pdf|png
+  [şekil] figures/fig03_cumulative_entropy.pdf|png
+  [şekil] figures/fig03_topk_topp.pdf|png
+  [şekil] figures/fig03_stepwise_bars.pdf|png
+
+========================================================================
+Deney 03 - toplu istatistikler (Tablo II-III)
+========================================================================
+T=0.2  | H̄ = 0.430 bit | max p̄ = 0.893 | |V_0.9|¯ = 1.54 | |V_0.95|¯ = 1.77
+T=0.5  | H̄ = 1.100 bit | max p̄ = 0.748 | |V_0.9|¯ = 3.07 | |V_0.95|¯ = 3.82
+T=0.7  | H̄ = 1.478 bit | max p̄ = 0.672 | |V_0.9|¯ = 4.14 | |V_0.95|¯ = 5.27
+T=1.0  | H̄ = 2.008 bit | max p̄ = 0.575 | |V_0.9|¯ = 5.99 | |V_0.95|¯ = 7.86
+T=1.5  | H̄ = 2.870 bit | max p̄ = 0.438 | |V_0.9|¯ = 10.26 | |V_0.95|¯ = 14.43
+T=2.0  | H̄ = 3.667 bit | max p̄ = 0.325 | |V_0.9|¯ = 16.80 | |V_0.95|¯ = 24.65
+top-k k=1  | H̄ = 0.000 bit | atılan kütle ort. 0.425, maks 0.922
+top-k k=5  | H̄ = 1.359 bit | atılan kütle ort. 0.139, maks 0.679
+top-k k=10 | H̄ = 1.723 bit | atılan kütle ort. 0.058, maks 0.470
+top-k k=20 | H̄ = 1.939 bit | atılan kütle ort. 0.010, maks 0.233
+top-p p=0.5 | H̄ = 0.688 bit | |V_p| ort. 2.11 (min 1, maks 10) | atılan kütle ort. 0.292, maks 0.500
+top-p p=0.8 | H̄ = 1.315 bit | |V_p| ort. 4.25 (min 1, maks 23) | atılan kütle ort. 0.129, maks 0.200
+top-p p=0.9 | H̄ = 1.583 bit | |V_p| ort. 5.99 (min 1, maks 30) | atılan kütle ort. 0.068, maks 0.100
+top-p p=0.95| H̄ = 1.750 bit | |V_p| ort. 7.86 (min 1, maks 36) | atılan kütle ort. 0.035, maks 0.050
+  [sonuç] results/exp03_sampling_analysis.json
