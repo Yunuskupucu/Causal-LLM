@@ -153,7 +153,7 @@ uv pip install --python .venv/bin/python -r requirements.txt
 .venv/bin/python run_all.py exp03    # tek bir deney (önce model eğitilmiş olmalı)
 ```
 
-Tek komut modeli eğitir, yedi deneyi sırayla çalıştırır ve sonuçları yazar. Sıradan bir dizüstü bilgisayarda 10–16 dakika sürer.
+Tek komut modeli eğitir, yedi deneyi sırayla çalıştırır, sonuçları yazar ve rapordaki zaman çizelgesini çizer. Sıradan bir dizüstü bilgisayarda 10–16 dakika sürer.
 - **Şekiller:** `figures/` klasörüne
 - **Sayısal sonuçlar:** `results/` klasörüne
 - **Üretilen metinler:** `results/exp06_samples.md` dosyasına
@@ -206,7 +206,7 @@ Depo başka bir bilgisayarda GitHub'dan temiz olarak indirilip baştan çalışt
 │   ├── sampling.py       temperature, top-k, top-p
 │   ├── ngram.py          karşılaştırma için sayma modeli
 │   └── utils.py          tohum, grafik stili, kayıt
-├── experiments/          yedi deney
+├── experiments/          yedi deney + zaman çizelgesi (fig00_timeline.py)
 ├── figures/              deneylerin şekilleri (PDF + PNG)
 ├── results/              sayısal sonuçlar ve üretilen metinler
 └── docs/gorseller/       bu README'nin görselleri ve onları üreten betik

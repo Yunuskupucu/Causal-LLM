@@ -19,6 +19,7 @@ ORDER = [
     "exp05_chain_rule.py",
     "exp06_generation_quality.py",
     "exp07_library_comparison.py",
+    "fig00_timeline.py",            # Böl. II zaman çizelgesi; modele bağlı değil
 ]
 
 if __name__ == "__main__":
